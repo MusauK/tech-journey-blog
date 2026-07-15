@@ -2,7 +2,6 @@ import React from 'react';
 import Link from "next/link";
 import type {UrlObject} from "url";
 import Image from "next/image";
-import profilePic from '../../public/images/avatar.jpg'
 import DarkModeButton from "@/components/DarkModeButton";
 
 interface NavBarContainerProps {
@@ -33,8 +32,8 @@ const NavBarContainer: React.FC<NavBarContainerProps> = ({title, children, links
           <div className="w-full navbar glass fixed top-0 z-10 h-18">
             <div className="flex-none hidden lg:block w-12 h-12">
               <div className="avatar">
-                <div className="w-12 rounded-full border-primary border-2">
-                  <Image alt={'Profile image'} src={profilePic}/>
+                <div className="w-12 rounded-full border-primary border-2 flex items-center justify-center bg-base-300 text-xs font-semibold">
+                  LU
                 </div>
               </div>
             </div>
